@@ -1,0 +1,31 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: msvc_traceability
+
+  data:
+    mongodb:
+      host: localhost
+      port: 2701
+      username: admin
+      password: pass
+      database: db_traceability
+      authentication-database: admin
+
+      repositories:
+        type: auto
+        auto-index-creation: true
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+logging:
+  level:
+    com.mongodb: debug
+
+allowed-origins:
+  - http://localhost:3000/
+  - "*"
