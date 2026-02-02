@@ -1,4 +1,4 @@
-package com.pragma.challenge.msvc_traceability.domain.model;
+package com.pragma.challenge.msvc_traceability.domain.model.log;
 
 import com.pragma.challenge.msvc_traceability.domain.util.enums.OrderState;
 
@@ -7,6 +7,11 @@ import java.time.LocalDateTime;
 public class OrderStateLog {
     private OrderState state;
     private LocalDateTime timestamp;
+
+    public OrderStateLog(OrderState state, LocalDateTime timestamp) {
+        this.state = state;
+        this.timestamp = timestamp;
+    }
 
     public OrderStateLog(OrderStateLogBuilder builder) {
         this.state = builder.state;

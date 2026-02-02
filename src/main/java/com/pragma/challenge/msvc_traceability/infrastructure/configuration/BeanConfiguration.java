@@ -1,11 +1,14 @@
 package com.pragma.challenge.msvc_traceability.infrastructure.configuration;
 
 import com.pragma.challenge.msvc_traceability.domain.api.OrderLogServicePort;
+import com.pragma.challenge.msvc_traceability.domain.api.ReportServicePort;
 import com.pragma.challenge.msvc_traceability.domain.api.security.AuthorizationServicePort;
 import com.pragma.challenge.msvc_traceability.domain.spi.AuthorizationSecurityPort;
 import com.pragma.challenge.msvc_traceability.domain.spi.OrderLogPersistencePort;
+import com.pragma.challenge.msvc_traceability.domain.spi.RestaurantPersistencePort;
 import com.pragma.challenge.msvc_traceability.domain.usecase.AuthorizationUseCase;
 import com.pragma.challenge.msvc_traceability.domain.usecase.OrderLogUseCase;
+import com.pragma.challenge.msvc_traceability.domain.usecase.ReportUseCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -21,6 +24,14 @@ public class BeanConfiguration {
             OrderLogPersistencePort orderLogPersistencePort
     ){
         return new OrderLogUseCase(orderLogPersistencePort);
+    }
+
+    @Bean
+    public ReportServicePort reportServicePort(
+            OrderLogPersistencePort orderLogPersistencePort,
+            RestaurantPersistencePort restaurantPersistencePort
+    ) {
+        return new ReportUseCase(orderLogPersistencePort, restaurantPersistencePort);
     }
 
     @Bean

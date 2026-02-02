@@ -2,6 +2,7 @@ package com.pragma.challenge.msvc_traceability.infrastructure.configuration.feig
 
 import com.pragma.challenge.msvc_traceability.domain.util.TokenHolder;
 import com.pragma.challenge.msvc_traceability.infrastructure.output.feign.client.AuthFeign;
+import com.pragma.challenge.msvc_traceability.infrastructure.output.feign.client.RestaurantFeign;
 import com.pragma.challenge.msvc_traceability.infrastructure.util.ConfigurationConstants;
 import feign.Feign;
 import feign.Logger;
@@ -17,6 +18,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 @EnableFeignClients(
         clients = {
                 AuthFeign.class,
+                RestaurantFeign.class
         }
 )
 public class FeignClientConfiguration {

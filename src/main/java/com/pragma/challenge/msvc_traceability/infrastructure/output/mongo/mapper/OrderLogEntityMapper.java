@@ -1,6 +1,6 @@
 package com.pragma.challenge.msvc_traceability.infrastructure.output.mongo.mapper;
 
-import com.pragma.challenge.msvc_traceability.domain.model.OrderLog;
+import com.pragma.challenge.msvc_traceability.domain.model.log.OrderLog;
 import com.pragma.challenge.msvc_traceability.infrastructure.output.mongo.entity.OrderLogEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;

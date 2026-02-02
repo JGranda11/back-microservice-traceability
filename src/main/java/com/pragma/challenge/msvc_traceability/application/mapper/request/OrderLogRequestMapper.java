@@ -1,7 +1,7 @@
 package com.pragma.challenge.msvc_traceability.application.mapper.request;
 
 import com.pragma.challenge.msvc_traceability.application.dto.request.NewOrderLogRequest;
-import com.pragma.challenge.msvc_traceability.domain.model.OrderLog;
+import com.pragma.challenge.msvc_traceability.domain.model.log.OrderLog;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 

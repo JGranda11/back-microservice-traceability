@@ -1,4 +1,4 @@
-package com.pragma.challenge.msvc_traceability.domain.model;
+package com.pragma.challenge.msvc_traceability.domain.model.log;
 
 import java.util.List;
 

@@ -7,6 +7,7 @@ public class DomainConstants {
     }
 
     public static final String ORDER_LOG_ALREADY_HAS_AN_ASSIGNED_EMPLOYEE = "OrderLog already has an assignedEmployee";
+    public static final String THIS_ORDER_HAS_NOT_STATE = "This order has not %s state";
 
     // STUFF
     public static final String TOKEN_PREFIX = "Bearer ";

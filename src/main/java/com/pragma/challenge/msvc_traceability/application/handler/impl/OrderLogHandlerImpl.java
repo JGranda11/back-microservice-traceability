@@ -6,7 +6,7 @@ import com.pragma.challenge.msvc_traceability.application.handler.OrderLogHandle
 import com.pragma.challenge.msvc_traceability.application.mapper.request.OrderLogRequestMapper;
 import com.pragma.challenge.msvc_traceability.application.mapper.response.OrderLogResponseMapper;
 import com.pragma.challenge.msvc_traceability.domain.api.OrderLogServicePort;
-import com.pragma.challenge.msvc_traceability.domain.model.OrderLog;
+import com.pragma.challenge.msvc_traceability.domain.model.log.OrderLog;
 import com.pragma.challenge.msvc_traceability.domain.util.enums.OrderState;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -5,8 +5,8 @@ import com.pragma.challenge.msvc_traceability.domain.exception.EntityAlreadyExis
 import com.pragma.challenge.msvc_traceability.domain.exception.EntityNotFoundException;
 import com.pragma.challenge.msvc_traceability.domain.exception.OrderLogAlreadyHasThatStateException;
 import com.pragma.challenge.msvc_traceability.domain.exception.OrderLogAlreadyRegistersAnEmployeeException;
-import com.pragma.challenge.msvc_traceability.domain.model.OrderLog;
-import com.pragma.challenge.msvc_traceability.domain.model.OrderStateLog;
+import com.pragma.challenge.msvc_traceability.domain.model.log.OrderLog;
+import com.pragma.challenge.msvc_traceability.domain.model.log.OrderStateLog;
 import com.pragma.challenge.msvc_traceability.domain.spi.OrderLogPersistencePort;
 import com.pragma.challenge.msvc_traceability.domain.util.enums.OrderState;
 
